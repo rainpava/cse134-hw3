@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #e6debc;
+    --secondary-color: #a08a29;
+    --tertiary-color: #dace8e;
+    --text-color: #1a1818;
+    --page-width: 60vw;
+    --min-width: 500px;
+    --font-stack: "Comic Sans MS", Helvetica, sans-serif
+}

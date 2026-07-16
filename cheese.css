@@ -1,0 +1,115 @@
+@import url("cheese2.css");
+
+/*
+    <link> is preferred over @import because <link> can load the CSS in parallel with HTML. 
+    @import can only load CSS once the .css file importing it is fully loaded by the HTML file.
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 48px;
+}
+
+body {
+    font-family: var(--font-stack);
+    color: var(--text-color);
+    line-height: 1rem;
+    background-color: var(--primary-color);
+    width: var(--page-width);
+    min-width: var(--min-width);
+    margin: auto;
+}
+
+header p {
+    font-size: 0.55rem;
+}
+
+h1 {
+    font-size: 0.85rem;
+    font-weight: bolder;
+    border-bottom: 3px solid var(--tertiary-color);
+}
+
+h2 {
+    font-size: 0.70rem;
+    font-weight: bold;
+    margin: 0.3rem 0.5rem 0.3rem 0.1rem ;
+}
+
+section > p {
+    margin: 0.4rem 0.5rem 0.4rem 0.1rem
+}
+
+article > p {
+    font-size: 0.55rem;
+    font-weight: normal;
+    margin-left: 0.2rem;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 0.55rem;
+  margin-left: 0.3rem;
+}
+
+dt + dd {
+    margin-left: 30px;
+    padding-left: 5px;
+    border-left: solid 2px var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
+
+p, label, [type="text"], legend, q, dt + dd {
+    font-size: 0.45rem;
+    font-weight: light;
+}
+
+[lang="en"] {
+    background-color: var(--primary-color);
+}
+
+.latin {
+    font-weight: bolder;
+    color: black;
+    font-family: var(--font-stack);
+}
+
+#warning, blockquote {
+    border: 3px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    margin: 3px;
+}
+
+blockquote {
+    background-color: #f7cf21;
+    font-size: 32px;
+}
+
+blockquote > * {
+    padding: 0.25em;
+}
+
+input:checked + label {
+    font-weight: bold;
+}
+
+footer * {
+    font-size: 0.35rem;
+    font-weight: bold;
+}
+
+body > footer > p {
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
