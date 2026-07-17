@@ -28,6 +28,14 @@ header p {
     font-size: 0.55rem;
 }
 
+dt::after {
+    content: ":"
+}
+
+input:focus, button:focus {
+    border: solid 3px blue;
+}
+
 h1 {
     font-size: 0.85rem;
     font-weight: bolder;
