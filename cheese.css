@@ -32,7 +32,7 @@ dt::after {
     content: ":"
 }
 
-input:focus, button:focus {
+input:focus, button:focus, link:focus {
     border: solid 3px blue;
 }
 
